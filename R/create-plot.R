@@ -16,9 +16,13 @@ df %>%
   filter(Location == city) %>%
   ggplot(aes(x = Temp9am, y = Humidity9am)) + 
   labs(title = "Brisbane") +
+<<<<<<< HEAD
   geom_point(color = 'red') + 
   theme_minimal() + 
   facet_wrap(~WindDir9am)
+=======
+  geom_point(color = 'green')
+>>>>>>> main
 
 # Save the plot in graphics/
 ggsave(filename = "graphics/scatter-temp-humidity.png", plot = scatter_plot)
